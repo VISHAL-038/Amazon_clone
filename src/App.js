@@ -37,6 +37,7 @@ function App() {
           <Route index element={<Home />} loader={productsData}></Route>
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/wishlist" element={<WishList />}></Route>
+
         </Route>
         <Route path="/signin" element={<Signin />}></Route>
         <Route path="/registration" element={<Registration />}></Route>
