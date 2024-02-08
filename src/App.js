@@ -16,7 +16,7 @@ import Signin from "./pages/Signin";
 import Cart from "./pages/Cart";
 import Registration from "./pages/Registration"
 import WishList from "./pages/WishList";
-import ProductDetails from "./components/home/ProductDetail";
+import ProductDetail from "./components/home/ProductDetail";
 
 const Layout = () => {
   return (
@@ -37,6 +37,7 @@ function App() {
           <Route index element={<Home />} loader={productsData}></Route>
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/wishlist" element={<WishList />}></Route>
+          <Route path="/ProductDetail/:id" element={<ProductDetail />}></Route>
 
         </Route>
         <Route path="/signin" element={<Signin />}></Route>

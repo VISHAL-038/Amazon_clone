@@ -61,7 +61,9 @@ const Products = () => {
               </li>
               {/* <Link to={`/ProductDetails/${item.id}`}> */}
               <li className="productLi" >
+              <Link to={`/ProductDetail/${item.id}`}>
                 View Details{""}
+              </Link>
                 <span>
                   <ArrowCircleRightIcon />
                 </span>
