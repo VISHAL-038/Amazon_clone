@@ -17,6 +17,7 @@ import Cart from "./pages/Cart";
 import Registration from "./pages/Registration"
 import WishList from "./pages/WishList";
 import ProductDetail from "./components/home/ProductDetail";
+import Category from "./components/home/Category";
 
 const Layout = () => {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route path="/cart" element={<Cart />}></Route>
           <Route path="/wishlist" element={<WishList />}></Route>
           <Route path="/ProductDetail/:id" element={<ProductDetail />}></Route>
+          {/* <Route path="/category" element={<Category />}></Route> */}
 
         </Route>
         <Route path="/signin" element={<Signin />}></Route>
